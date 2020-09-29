@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.design6.dao.RouteDao">
+    <select id="getAllRoute" resultType="com.example.design6.pojo.Route">
+        select * from route
+    </select>
+    <select id="getRoutesByStartCity" resultType="com.example.design6.pojo.Route">
+        select * from route where start_city=#{startCityId}
+    </select>
+</mapper>

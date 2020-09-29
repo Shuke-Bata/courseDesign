@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="580.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="design1.controller.Controller">
+    <children>
+        <TextArea fx:id="show" editable="false" layoutX="30" layoutY="10" prefHeight="140" prefWidth="410" />
+
+        <Button layoutX="30" layoutY="180" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="(">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="140" layoutY="180" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text=")">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="250" layoutY="180" mnemonicParsing="false" onAction="#pressClear" prefHeight="50" prefWidth="80" text="clear">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="360" layoutY="180" mnemonicParsing="false" onAction="#pressDeleteOne" prefHeight="50" prefWidth="80" text="←">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+
+        <Button layoutX="30" layoutY="260" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="7">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="140" layoutY="260" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="8">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="250" layoutY="260" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="9">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="360" layoutY="260" mnemonicParsing="false" onAction="#pressOperator" prefHeight="50" prefWidth="80" text="-">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+
+        <Button layoutX="30" layoutY="340" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="4">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="140" layoutY="340" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="5">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="250" layoutY="340" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="6">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="360" layoutY="340" mnemonicParsing="false" onAction="#pressOperator" prefHeight="50" prefWidth="80" text="+">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+
+        <Button layoutX="30" layoutY="420" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="1">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="140" layoutY="420" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="2">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="250" layoutY="420" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="3">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="360" layoutY="420" mnemonicParsing="false" onAction="#pressDerivative" prefHeight="50" prefWidth="80" text="求导">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+
+        <Button layoutX="30" layoutY="500" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text=".">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="140" layoutY="500" mnemonicParsing="false" onAction="#pressNumberButton" prefHeight="50" prefWidth="80" text="0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="250" layoutY="500" mnemonicParsing="false" onAction="#pressUnknownButton" prefHeight="50" prefWidth="80" text="y">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+        <Button layoutX="360" layoutY="500" mnemonicParsing="false" onAction="#pressEqual" prefHeight="50" prefWidth="80" text="=">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

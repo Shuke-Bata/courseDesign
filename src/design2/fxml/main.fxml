@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1288.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="design2.controller.Controller">
+    <children>
+        <Label layoutX="25.0" layoutY="29.0" text="Enter a text">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="encodeInput" layoutX="150.0" layoutY="23.0" prefHeight="40.0"
+                   prefWidth="900.0"/>
+        <Button layoutX="1100.0" layoutY="23.0" mnemonicParsing="false" onAction="#pressEncode" prefHeight="40.0"
+                text="Show Huffman Tree"/>
+        <ScrollPane fx:id="scrollPane" layoutY="80.0" prefHeight="520.0" prefWidth="1288.0"/>
+        <Label layoutX="25.0" layoutY="635.0" text="Enter a bit string">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="decodeInput" layoutX="192.0" layoutY="629.0" prefHeight="40.0" prefWidth="858.0"/>
+        <Button layoutX="1100.0" layoutY="629.0" mnemonicParsing="false" onAction="#pressDecode" prefHeight="40.0"
+                text="Decode Text"/>
+    </children>
+</AnchorPane>

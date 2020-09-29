@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane prefHeight="363.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.design6.controller.RegisteredController">
+    <children>
+        <ImageView fitHeight="363.0" fitWidth="500.0" pickOnBounds="true">
+            <image>
+                <Image url="@../images/reg_background.jpg"/>
+            </image>
+            <viewport>
+                <Rectangle2D/>
+            </viewport>
+        </ImageView>
+        <HBox layoutX="50.0" layoutY="50.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="70.0" text="账号"/>
+                <TextField fx:id="accountNumber" prefHeight="40.0" prefWidth="300.0" promptText="请输入账号"/>
+            </children>
+        </HBox>
+        <HBox layoutX="50.0" layoutY="130.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="70.0" text="密码"/>
+                <PasswordField fx:id="password" prefHeight="40.0" prefWidth="300.0" promptText="请输入密码"/>
+            </children>
+        </HBox>
+        <HBox layoutX="50.0" layoutY="210.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="70.0" text="确认密码"/>
+                <PasswordField fx:id="confirmPassword" prefHeight="40.0" prefWidth="300.0" promptText="请再次输入密码"/>
+            </children>
+        </HBox>
+        <Button layoutX="200.0" layoutY="290.0" mnemonicParsing="false" onAction="#pressRegistered" prefHeight="40.0"
+                prefWidth="100.0" text="注册"/>
+    </children>
+</AnchorPane>

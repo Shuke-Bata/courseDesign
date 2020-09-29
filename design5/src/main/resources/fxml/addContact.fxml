@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="310.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zhou.design5.controller.AddController">
+    <children>
+        <Button layoutX="30.0" layoutY="15.0" mnemonicParsing="false" onAction="#pressCancel" prefHeight="40.0" prefWidth="50.0" text="取消" />
+        <Button layoutX="470.0" layoutY="15.0" mnemonicParsing="false" onAction="#pressSave" prefHeight="40.0" prefWidth="50.0" text="保存" />
+        <Label alignment="CENTER" layoutX="225.0" layoutY="10.0" prefHeight="50.0" prefWidth="100.0" text="新建联系人">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <HBox layoutX="75.0" layoutY="80.0" prefWidth="400.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="姓名*" />
+                <TextField fx:id="name" prefHeight="40.0" prefWidth="300.0" />
+            </children>
+        </HBox>
+        <HBox layoutX="75.0" layoutY="150.0" prefWidth="400.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="手机号码*" />
+                <TextField fx:id="phoneNumber" prefHeight="40.0" prefWidth="300.0" />
+            </children>
+        </HBox>
+        <Button fx:id="addPhone" layoutX="479.0" layoutY="155.0" mnemonicParsing="false" onMouseClicked="#pressAddPhone" text="+" />
+        <HBox layoutX="75.0" layoutY="220.0" prefWidth="400.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="电子邮件" />
+                <TextField fx:id="email" prefHeight="40.0" prefWidth="300.0" />
+            </children>
+        </HBox>
+      <Label fx:id="errorName" layoutX="350.0" layoutY="125.0" text="请输入2~4范围内的中文" textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorPhone" layoutX="358.0" layoutY="190.0" text="请输入正确的手机号码" textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorEmail" layoutX="358.0" layoutY="267.0" text="请输入正确的电子邮件" textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1225.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.design6.controller.MainController">
+    <children>
+        <Text focusTraversable="true" layoutX="533.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="全国交通咨询系统">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Button fx:id="exit" focusTraversable="false" layoutX="1131.0" layoutY="8.0" mnemonicParsing="false" onAction="#pressExit" prefHeight="40.0" prefWidth="80.0" text="Exit" />
+        <Line endX="1225.0" layoutY="63.0" />
+        <Label alignment="CENTER" layoutX="30.0" layoutY="81.0" prefHeight="40.0" prefWidth="60.0" text="起始城市" />
+        <TextField fx:id="startInput" focusTraversable="false" layoutX="100.0" layoutY="81.0" prefHeight="40.0" prefWidth="200.0" />
+        <Label alignment="CENTER" layoutX="350.0" layoutY="81.0" prefHeight="40.0" prefWidth="60.0" text="终点城市" />
+        <TextField fx:id="endInput" focusTraversable="false" layoutX="420.0" layoutY="81.0" prefHeight="40.0" prefWidth="200.0" />
+        <Label alignment="CENTER" layoutX="670.0" layoutY="81.0" prefHeight="40.0" prefWidth="60.0" text="出发日期" />
+        <DatePicker fx:id="departureTime" focusTraversable="false" layoutX="740.0" layoutY="81.0" prefHeight="40.0" />
+        <Button focusTraversable="false" layoutX="1020.0" layoutY="81.0" mnemonicParsing="false" onAction="#pressSearch" prefHeight="40.0" prefWidth="80.0" text="查询" />
+        <Button layoutX="190.0" layoutY="151.0" mnemonicParsing="false" onAction="#pressFast" text="最快路线" />
+        <Button layoutX="60.0" layoutY="151.0" mnemonicParsing="false" onAction="#pressLeastMoney" text="最省路线" />
+        <Button layoutX="320.0" layoutY="151.0" mnemonicParsing="false" onAction="#pressLessChange" text="转乘最少路线" />
+        <TableView fx:id="showTable" layoutY="189.0" prefHeight="468.0" prefWidth="1226.0">
+            <columns>
+                <TableColumn fx:id="trainNumberCol" prefWidth="150.0" text="列车编号" />
+                <TableColumn fx:id="startCityCol" prefWidth="150.0" text="起始城市" />
+                <TableColumn fx:id="endCityCol" prefWidth="150.0" text="终点城市" />
+                <TableColumn fx:id="startTimeCol" prefWidth="250.0" text="出发时间" />
+                <TableColumn fx:id="endTimeCol" prefWidth="250.0" text="到达时间" />
+                <TableColumn fx:id="costTimeCol" prefWidth="150.0" text="花费时间" />
+                <TableColumn fx:id="priceCol" prefWidth="120.0" text="价格" />
+            </columns>
+        </TableView>
+        <Label fx:id="totalMoney" layoutX="50.0" layoutY="665.0" text="总金额：0" />
+        <Label fx:id="totalTime" layoutX="350.0" layoutY="665.0" text="总时间：0" />
+        <Label fx:id="totalCount" layoutX="650.0" layoutY="665.0" text="换乘次数：0" />
+      <Button layoutX="480.0" layoutY="151.0" mnemonicParsing="false" onAction="#pressClearTable" text="清空查询数据" />
+      <ListView fx:id="startCityListView" layoutX="100.0" layoutY="121.0" prefHeight="289.0" prefWidth="200.0" visible="false" />
+      <ListView fx:id="endCityListView" layoutX="420.0" layoutY="121.0" prefHeight="289.0" prefWidth="200.0" visible="false" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zhou.design5.controller.LoginController">
+    <children>
+        <ImageView fitHeight="300.0" fitWidth="500.0" opacity="0.8" pickOnBounds="true">
+            <image>
+                <Image url="@../images/background.jpg" />
+            </image>
+            <viewport>
+                <Rectangle2D />
+            </viewport>
+        </ImageView>
+        <HBox layoutX="50.0" layoutY="50.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="70.0" text="账号" />
+                <TextField fx:id="number" prefHeight="40.0" prefWidth="300.0" promptText="请输入账号" />
+            </children>
+        </HBox>
+        <Label fx:id="errorNumber" layoutX="347.0" layoutY="95.0" text="账号错误" textFill="RED" visible="false" />
+        <HBox layoutX="50.0" layoutY="130.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="70.0" text="密码" />
+                <PasswordField fx:id="password" prefHeight="40.0" prefWidth="300.0" promptText="请输入密码" />
+            </children>
+        </HBox>
+        <Label fx:id="errorPassword" layoutX="347.0" layoutY="175.0" text="密码错误" textFill="RED" visible="false" />
+        <Button layoutX="200.0" layoutY="219.0" mnemonicParsing="false" onAction="#pressLogin" prefHeight="40.0" prefWidth="100.0" text="登录" />
+    </children>
+</AnchorPane>

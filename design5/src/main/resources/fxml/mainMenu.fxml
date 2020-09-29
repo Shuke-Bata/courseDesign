@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zhou.design5.controller.MainController">
+    <children>
+        <Label alignment="CENTER" layoutX="225.0" layoutY="14.0" prefHeight="50.0" prefWidth="100.0" text="联系人">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button layoutX="475.0" layoutY="19.0" mnemonicParsing="false" onAction="#pressAddContact"
+                prefHeight="40.0" prefWidth="50.0" text="+"/>
+        <TextField fx:id="searchInput" layoutX="25.0" layoutY="84.0" prefHeight="40.0" prefWidth="500.0"
+                   promptText="在联系人中搜索" style="-fx-padding: 0 0 0 32;"/>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="27.0" layoutY="89.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/search.jpg"/>
+            </image>
+        </ImageView>
+        <ListView fx:id="listView" layoutX="25.0" layoutY="141.0" prefHeight="809.0" prefWidth="525.0"
+                  style="-fx-fixed-cell-size: 50px;"/>
+        <ListView fx:id="navigation" layoutX="510.0" layoutY="141.0" prefHeight="809.0" prefWidth="40.0"
+                  style="-fx-fixed-cell-size: 29px;"/>
+    </children>
+</AnchorPane>
